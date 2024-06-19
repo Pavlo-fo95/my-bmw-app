@@ -1,0 +1,105 @@
+.app {
+  text-align: left;
+  margin: 20px;
+  max-width: 900px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin: 10px 0;
+  max-width: 600px;
+  white-space: nowrap;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.filter {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.arrow {
+  margin-left: 5px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.find-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.find-button:hover {
+  background-color: #0056b3;
+}
+
+.header-image-container {
+  text-align: center;
+  position: relative;
+  margin-bottom: 60px; 
+}
+
+.header-text {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #666;
+  font-weight: bold;
+}
+
+.large-image {
+  width: 100%;
+  height: auto;
+}
+
+.bestsellers {
+  position: absolute;
+  bottom: -40px; 
+  left: 0;
+  font-size: 3rem;
+  color: #ccc;
+  font-weight: lighter;
+}
+
+.car-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 60px; 
+}
+
+.cars-wrapper {
+  margin-top: 20px;
+}
+
+.car-container .car {
+  flex: 1 1 calc(33% - 40px); 
+  box-sizing: border-box;
+}

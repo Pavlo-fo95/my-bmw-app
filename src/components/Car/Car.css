@@ -1,0 +1,73 @@
+.car {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s;
+    height: 100%; /* Используем высоту по содержимому */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);  
+}
+
+.car img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;  
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin-bottom: 10px; 
+}
+
+.car h4 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: normal; 
+}
+
+.car p {
+    font-size: 0.8rem;
+    margin: 5px 0;
+    line-height: 1.3;
+}
+
+.details-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    width: 100%;
+    align-self: center; 
+}
+
+.car:hover {
+    transform: scale(1.05);
+}
+
+.car:hover .details-button {
+    display: block;
+}
+
+.special-label {
+    background-color: #333;
+    color: white;
+    padding: 5px 15px;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    transform: translate(0, -50%);
+    white-space: nowrap;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+    font-size: 0.7rem;
+    line-height: 1;
+    z-index: 1;
+}
+
+.star {
+    margin-right: 5px;
+}
