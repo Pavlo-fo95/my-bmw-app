@@ -1,5 +1,14 @@
-.car-list {
+.car-slider {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.car-slide {
+    padding: 10px;
+}
+
+.slick-slide {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
 }

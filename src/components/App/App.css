@@ -1,23 +1,22 @@
 .app {
-  text-align: left;
-  margin: 20px;
-  max-width: 900px; 
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-weight: 300;
 }
 
 .subtitle {
-  font-size: 1rem;
-  margin: 10px 0;
-  max-width: 600px;
-  white-space: nowrap;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
 }
 
 .filters {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 20px;
-  gap: 10px;
 }
 
 .filter {
@@ -25,21 +24,13 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 
-.arrow {
-  margin-left: 5px;
-  border: solid black;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+.filter .arrow {
+  margin-left: 10px;
 }
 
 .find-button {
@@ -49,57 +40,140 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  flex: 1;
-  font-size: 1rem;
-}
-
-.find-button:hover {
-  background-color: #0056b3;
 }
 
 .header-image-container {
-  text-align: center;
   position: relative;
-  margin-bottom: 60px; 
-}
-
-.header-text {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  color: #666;
-  font-weight: bold;
+  text-align: center;
 }
 
 .large-image {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 .bestsellers {
   position: absolute;
-  bottom: -40px; 
-  left: 0;
-  font-size: 3rem;
-  color: #ccc;
-  font-weight: lighter;
-}
-
-.car-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 60px; 
+  bottom: 10px;
+  left: 10px;
+  font-size: 1.5rem;
+  color: #888;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 .cars-wrapper {
   margin-top: 20px;
 }
 
-.car-container .car {
-  flex: 1 1 calc(33% - 40px); 
-  box-sizing: border-box;
+.car-container {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-wrapper {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+.carousel-wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.car {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);  
+}
+
+.car img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;  
+  object-fit: cover; 
+  border-radius: 8px; 
+  margin-bottom: 10px; 
+}
+
+.car h4 {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: normal; 
+}
+
+.car p {
+  font-size: 0.8rem;
+  margin: 5px 0;
+  line-height: 1.3;
+}
+
+.details-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  width: 100%;
+  align-self: center; 
+}
+.car {
+  height: 350px; 
+  padding: 20px; 
+}
+
+.car:hover {
+  transform: scale(1.05);
+}
+
+.car:hover .details-button {
+  display: block;
+}
+
+.special-label {
+  background-color: #333;
+  color: white;
+  padding: 5px 15px;
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  transform: translate(0, -50%);
+  white-space: nowrap;
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+  font-size: 0.7rem;
+  line-height: 1;
+  z-index: 1;
+}
+
+.star {
+  margin-right: 5px;
+}
+
+.car-slider {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.car-slide {
+  padding: 10px;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -53,6 +53,10 @@ const App: React.FC = () => {
                     <CarList cars={carsData} />
                 </div>
             </div>
+            <div className="carousel-wrapper">
+                <h2>Інші автомобілі</h2>
+                <CarList cars={carsData} />
+            </div>
         </div>
     );
 };
