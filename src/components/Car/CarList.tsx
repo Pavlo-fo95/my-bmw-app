@@ -9,6 +9,30 @@ interface CarListProps {
     cars: CarProps[];
 }
 
+const NextArrow = (props: any) => {
+    const { onClick } = props;
+    return (
+        <div
+            style={{ display: 'block', fontSize: '24px', cursor: 'pointer', position: 'absolute', right: '-25px', top: '50%', transform: 'translateY(-50%)' }}
+            onClick={onClick}
+        >
+             &gt;  
+        </div>
+    );
+};
+
+const PrevArrow = (props: any) => {
+    const { onClick } = props;
+    return (
+        <div
+            style={{ display: 'block', fontSize: '24px', cursor: 'pointer', position: 'absolute', left: '-25px', top: '50%', transform: 'translateY(-50%)', color:'#888' }}
+            onClick={onClick}
+        >
+             &lt;                     
+        </div>
+    );
+};
+
 const CarList: React.FC<CarListProps> = ({ cars }) => {
     const settings = {
         dots: true,
@@ -16,14 +40,16 @@ const CarList: React.FC<CarListProps> = ({ cars }) => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+        
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
-                    infinite: true,
-                    dots: true
+                    infinite: true
                 }
             },
             {

@@ -6,17 +6,21 @@
 
 .title {
   font-weight: 300;
+  text-align: center;
 }
 
 .subtitle {
-  font-size: 0.9rem;
-  margin-bottom: 20px;
+  font-size: 1rem;
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: center;
 }
 
 .filters {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 20px;
+  gap: 10px;
 }
 
 .filter {
@@ -24,9 +28,21 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.arrow {
+  margin-left: 5px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 .filter .arrow {
@@ -45,6 +61,7 @@
 .header-image-container {
   position: relative;
   text-align: center;
+  margin: 0 auto;
 }
 
 .large-image {
@@ -83,97 +100,4 @@
 .carousel-wrapper h2 {
   text-align: center;
   margin-bottom: 20px;
-}
-
-.car {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: left;
-  position: relative;
-  transition: transform 0.3s;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);  
-}
-
-.car img {
-  width: 100%;
-  height: auto;
-  max-height: 200px;  
-  object-fit: cover; 
-  border-radius: 8px; 
-  margin-bottom: 10px; 
-}
-
-.car h4 {
-  font-size: 1rem;
-  margin: 0;
-  font-weight: normal; 
-}
-
-.car p {
-  font-size: 0.8rem;
-  margin: 5px 0;
-  line-height: 1.3;
-}
-
-.details-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  font-size: 0.8rem;
-  width: 100%;
-  align-self: center; 
-}
-.car {
-  height: 350px; 
-  padding: 20px; 
-}
-
-.car:hover {
-  transform: scale(1.05);
-}
-
-.car:hover .details-button {
-  display: block;
-}
-
-.special-label {
-  background-color: #333;
-  color: white;
-  padding: 5px 15px;
-  position: absolute;
-  top: 25px;
-  left: 10px;
-  transform: translate(0, -50%);
-  white-space: nowrap;
-  clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
-  font-size: 0.7rem;
-  line-height: 1;
-  z-index: 1;
-}
-
-.star {
-  margin-right: 5px;
-}
-
-.car-slider {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.car-slide {
-  padding: 10px;
-}
-
-.slick-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

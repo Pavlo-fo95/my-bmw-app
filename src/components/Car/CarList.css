@@ -1,14 +1,21 @@
 .car-slider {
     width: 90%;
     margin: 0 auto;
+    position: relative;
 }
 
 .car-slide {
     padding: 10px;
 }
 
-.slick-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slick-prev, .slick-next {
+    z-index: 1;
+}
+
+.slick-prev {
+    left: -25px;
+}
+
+.slick-next {
+    right: -25px;
 }
